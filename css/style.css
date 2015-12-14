@@ -1,0 +1,60 @@
+body {
+    top:0;
+    bottom:0;
+    background-color: #223438;
+    font-family: 'Open Sans', sans-serif;;
+}
+
+.container {
+    margin-top: 3em;
+}
+
+.marge {
+    margin: 10px 0px 15px 0px;
+}
+
+.invert {
+    color: #FFF;
+}
+
+.pad {
+    padding: 20px;
+}
+
+.profile-left {
+    width: 100%;
+    float: left;
+}
+
+.profile-right {
+    width: 100%;
+    float: left;
+}
+
+#profile-img {
+    margin: 10px;
+    margin: 0 auto;
+}
+
+.chart {
+    max-height: 300px;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+
+@media (max-width : 992px) {
+
+    .profile-left {
+        width: 35%;
+        float: left;
+    }
+
+    .profile-right {
+        width: 62%;
+        float: right;
+    }
+
+}
