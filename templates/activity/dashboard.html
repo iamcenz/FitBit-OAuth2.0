@@ -1,4 +1,4 @@
-<!-- secure.html -->
+<!-- dashboard.html -->
 
 
 <div class="row ng-cloak">
@@ -19,17 +19,17 @@
 		<div class="panel panel-default pad">
 			<h2>Dashboard</h2>
 			<hr>
-			<u><h4>Past 7 days</h4></u>
+			<u><h4>Recent Activity</h4></u>
 			<canvas id="line" class="chart chart-line" chart-data="data"
 			  chart-labels="labels" chart-legend="true" chart-series="series"
 			  chart-click="onClick">
 			</canvas> 
 			<hr>
-			<table class="table table-hover table-bordered marge" ng-repeat="info in activity | orderBy:'Day'">
-				<tr><th colspan="2">{{info['Day']}}</th></tr>
-				<tr><th>Total Steps</th><td>{{info['Steps']}}</td></tr>
-				<tr><th>Total Calories Burned</th><td>{{info['Calories']}}</td></tr>
-				<tr><th>BMR</th><td>{{info['Calories BMR']}}</td></tr>
+			<table class="table table-hover table-bordered marge" ng-repeat="info in activity">
+				<tr><th colspan="2"><h4>{{info['day']}}</h4></th></tr>
+				<tr><th>Total Steps</th><td>{{info['steps']}}</td></tr>
+				<tr><th>Total Calories Burned</th><td>{{info['calories']}}</td></tr>
+				<tr><th>BMR</th><td>{{info['caloriesBMR']}}</td></tr>
 			</table>
 			<br>
 		</div>
